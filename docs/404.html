@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" data-demo="true">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Hub — a daily space for learning, sleep, dreams, and the connections between them.">
+  <title>Personal Hub · Your days, connected</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./katex.css">
+  <link rel="stylesheet" href="./journals.css">
+  <script src="./icons.js" defer></script>
+  <script src="./rich.js" defer></script>
+  <script src="./demo.js" defer></script>
+  <script src="./navigation.js" defer></script>
+  <script src="./workflow.js" defer></script>
+  <script src="./journals.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#page-content">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="/" data-route><span class="brand-symbol"><i data-lucide="notebook-tabs" aria-hidden="true"></i></span><span>Personal Hub<small>Your days, connected.</small></span></a>
+    <div class="nav-caption">YOUR SPACE</div>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a href="/" data-route data-nav="home"><i data-lucide="house" aria-hidden="true"></i>Overview</a>
+      <a href="/education" data-route data-nav="education"><i data-lucide="book-open" aria-hidden="true"></i>Education</a>
+      <a href="/habits-sleep" data-route data-nav="sleep"><i data-lucide="moon-star" aria-hidden="true"></i>Habits &amp; sleep</a>
+    </nav>
+    <div class="sidebar-note"><i data-lucide="sprout" aria-hidden="true"></i><p>A little reflection.<br>A little more clarity.</p><span>Built one day at a time.</span></div>
+    <div class="sidebar-footer"><span id="privacy-label"><i data-lucide="lock-keyhole" aria-hidden="true"></i>Private workspace</span><button id="export-journals" type="button"><i data-lucide="download" aria-hidden="true"></i>Export journals</button></div>
+  </aside>
+  <div class="app-main">
+    <header class="topbar"><span id="header-date"></span><span class="environment"><i data-lucide="hard-drive" aria-hidden="true"></i><span id="environment-label">Saved on this computer</span></span></header>
+    <div id="demo-banner" hidden><strong>Interactive course demo</strong><span>Fictional entries · changes stay in this browser · live AI is available in the local app</span><button id="reset-demo" type="button">Reset demo</button></div>
+    <main>
+      <div class="page-heading"><div><nav id="breadcrumbs" class="eyebrow" aria-label="Breadcrumb"></nav><h1 id="page-title">Your days, connected.</h1><p id="page-subtitle">Make a little room for reflection.</p></div><a id="today-link" class="button primary" href="/education/daily" data-route><i data-lucide="plus" aria-hidden="true"></i>Today's report</a></div>
+      <div class="workspace">
+        <article class="lecture" id="page-content" tabindex="-1"></article>
+        <section class="assistant" aria-labelledby="assistant-title">
+          <div class="assistant-heading"><span class="assistant-mark"><i data-lucide="sparkles" aria-hidden="true"></i></span><div><div class="section-label" id="assistant-eyebrow">YOUR REFLECTION PARTNER</div><h2 id="assistant-title">Hub assistant</h2></div><button id="minimize-chat" class="icon-button" title="Minimize conversation" aria-label="Minimize or restore conversation" aria-expanded="true"><i data-lucide="minus" aria-hidden="true"></i></button></div>
+          <p id="assistant-description" class="assistant-description">One conversation, with the bigger picture in mind.</p>
+          <details id="connection-details" class="connection" open><summary><span id="status" role="status">Checking connection…</span><span id="plan" hidden>ChatGPT plan</span></summary><div id="account"></div><div class="connection-actions"><button id="connect" class="primary" disabled><i data-lucide="log-in" aria-hidden="true"></i>Connect ChatGPT</button><button id="confirm-owner" class="primary" hidden>Use this account as owner</button><button id="disconnect" class="icon-button" title="Disconnect ChatGPT" aria-label="Disconnect ChatGPT" hidden><i data-lucide="log-out" aria-hidden="true"></i></button><a href="https://chatgpt.com/settings/usage" target="_blank" rel="noreferrer" class="usage-link">Manage usage</a></div></details>
+          <div id="notice" role="alert" hidden></div>
+          <div class="model-row"><label for="model">Model</label><select id="model" disabled><option>No connected model</option></select><button id="refresh-models" class="icon-button" disabled title="Refresh models" aria-label="Refresh models"><i data-lucide="refresh-cw" aria-hidden="true"></i></button></div>
+          <div id="conversation-panel"><p id="context-status" class="privacy-note"></p><div id="messages" class="messages" role="log" aria-label="Conversation" aria-live="polite"></div><div id="chat-suggestions" class="chat-suggestions"></div>
+            <form id="chat-form"><label for="question">What's on your mind?</label><textarea id="question" rows="3" maxlength="4000" dir="auto" placeholder="Start wherever you are…" disabled></textarea><div class="composer-footer"><span id="completion-status" role="status">Conversations are saved</span><button id="stop" class="icon-button" hidden title="Stop response" aria-label="Stop response"><i data-lucide="square" aria-hidden="true"></i></button><button id="send" class="primary" type="submit" disabled><i data-lucide="send" aria-hidden="true"></i>Send</button></div></form>
+            <form id="demo-search-form" hidden><label for="demo-query">Search all demo journals</label><div class="search-line"><input id="demo-query" type="search" placeholder="Try “forest” or “Algorithms”" maxlength="200"><button class="primary" type="submit">Search</button></div><div id="demo-results" aria-live="polite"></div></form>
+          </div>
+          <p class="privacy-note assistant-footer" id="assistant-privacy"><i data-lucide="lock-keyhole" aria-hidden="true"></i>Only you can read these conversations.</p>
+        </section>
+      </div>
+      <footer class="page-footer"><span>PERSONAL HUB</span><span>A space to notice, learn, and grow.</span></footer>
+    </main>
+  </div>
+</body>
+</html>
