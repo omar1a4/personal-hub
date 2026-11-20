@@ -12,7 +12,7 @@ Submission boundary: a public static demo contains fictional records and support
 
 Verification: 17 automated tests passed on Node 24 in the development environment, including existing course regressions and new journaling persistence, restore, authorization, partial failure, context and retrieval tests. Browser testing verified reports survive refresh, later dream fragments update the same day, prior versions restore, cross-journal search returns matching dated entries, and the 390px layout renders correctly. New journal AI behavior is tested with synthetic runtimes; one live Windows-account journal conversation remains for the owner to try. Historical real connection-test evidence below does not establish new live-flow verification.
 
-Publication status: source and static demo are prepared. Record actual repository and live URL here only after publication succeeds.
+Publication status: published on 2026-11-20. Source: https://github.com/omar1a4/personal-hub . Website: https://omar1a4.github.io/personal-hub/ . GitHub Pages serves main/docs. The live dashboard and cross-journal keyword search were verified in a browser. The Technion Copilot connection and account settings were not changed; no Copilot agent was used.
 
 
 ## Authorized Education Workflow (2026-11-17)

@@ -3,6 +3,10 @@
 A daily space for learning, sleep, dreams, and the connections between them.
 Built for the **AI course — Avi Salmon** website assignment.
 
+**Submission links:** [Live website](https://omar1a4.github.io/personal-hub/) · [Source repository](https://github.com/omar1a4/personal-hub)
+
+![Personal Hub dashboard](preview.jpg)
+
 ## What works
 
 - **Education → Daily study report:** record minutes per course, effort satisfaction, reflections, and tags; see totals and a seven-day study chart.
